@@ -44,7 +44,7 @@ jobs:
 
       - name: Build APK
         run: |
-          buildozer android debug 2>&1 | tee build.log
+          yes | buildozer android debug
         continue-on-error: false
 
       - name: Upload APK
