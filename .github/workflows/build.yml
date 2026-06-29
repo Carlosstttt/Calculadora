@@ -67,13 +67,13 @@ jobs:
           ANDROID_NDK_ROOT: ""
           ANDROID_NDK_LATEST_HOME: ""
         run: |
-          buildozer android debug
+          yes | buildozer android debug
 
       - name: Upload APK
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: apk
+          name: calculadora-apk
           path: bin/*.apk
           if-no-files-found: error
 
