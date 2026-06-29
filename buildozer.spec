@@ -44,10 +44,10 @@ requirements = python3,kivy,kivymd,pillow
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/calcu.png
+presplash.filename = %(source.dir)s/calcu.jpeg
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/calcu.png
+icon.filename = %(source.dir)s/calcu.jpeg
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -110,7 +110,7 @@ android.minapi = 24
 #android.sdk = 20
 
 # (str) Android NDK version to use
-android.ndk = 25c
+#android.ndk = 25c
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 android.ndk_api = 24
@@ -206,7 +206,7 @@ android.accept_sdk_license = True
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
 # android.enable_androidx requires android.api >= 28
-#android.enable_androidx = True
+android.enable_androidx = True
 
 # (list) add java compile options
 # this can for example be necessary when importing certain java libraries using the 'android.gradle_dependencies' option
