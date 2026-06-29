@@ -151,5 +151,5 @@ class CalculadoraApp(MDApp):
         except Exception:
             self.root.ids.display.text = "Error"
             self.expresion = ""
-if __name__ == "__main__":
-    CalculadoraApp().run()
+            
+CalculadoraApp().run()
