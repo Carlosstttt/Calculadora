@@ -57,5 +57,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: calculadora-apk
-          # Buscador recursivo avanzado: encontrará el apk sin importar la carpeta temporal
-          path: "**/.buildozer/**/*.apk"
+          path: bin/*.apk
